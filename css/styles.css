@@ -123,9 +123,6 @@ ul,ol {
 }
 
 /* Contact */
-.header-group {
-    margin-left: auto;
-}
 .contacts-list-header {
     font-weight: 500;
     font-size: 14px;
@@ -134,6 +131,7 @@ ul,ol {
     color: var(--primary-txt-cl);
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 .contacts-list-header .link:hover,
 .contacts-list-header .link:focus {
@@ -141,11 +139,15 @@ ul,ol {
 }
 .contact-item {
     margin-right: 50px;
-    padding: 32px 0;
-    cursor: pointer;
+    
 }
 .contact-item:last-child {
     margin-right: 0;
+}
+.contact-item .link {
+    display: block;
+    padding: 32px 0;
+    cursor: pointer;
 }
 /* Hero */
 .section-hero {
@@ -178,7 +180,7 @@ ul,ol {
     align-items: center;
 }
 .benefit-item {
-    flex-basis: calc(100%/4-23px);
+    flex-basis: calc((100%-90px)/4);
     margin-right: 30px;
 }
 .benefit-item:last-child {
@@ -316,17 +318,12 @@ ul,ol {
 
 /* Portfolio */
 /* main */
-.portfolio.section {
-    padding-top: 0px;
-    padding-bottom: 94px;
-}
 
 .filter-list {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 34px;
-    padding-top: 94px;
+    margin-bottom: 34px;
 }
 .filter-item {
     margin-right: 8px;
